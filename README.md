@@ -12,14 +12,17 @@ Uses Automatic Speech Recognition, Text to Speech voice synthesis and Neural Mac
   * First and foremost please use the following command and record your voice to be translated. Your voice should be recorded as soon as it says recording..
   * It will be saved as a input.wav file in the input folder.
   
-  Command to run: ` python ./src/create_audio_recording.py
+  Command to run: 
+     ` python ./src/create_audio_recording.py
 
   * Second build the speech translation service docker image with python 3.7.6 as thebase image - this installs all packages and gets model data.
   
-  Command to run: ` docker build -t speech-translation-service .
+  Command to run: 
+    ` docker build -t speech-translation-service .
   
   * Finally deploy your container.
-  Command to run: ` docker run -p 5000:5000 -v "${pwd}"/app/data -it speech-translation-service
+  Command to run: 
+    ` docker run -p 5000:5000 -v "${pwd}"/app/data -it speech-translation-service
   
 ### Navigating the app
  * Once you run the container use 127.0.0.1:5000 to use the app on windows else let it remain the same. If there are problems please let us know.
