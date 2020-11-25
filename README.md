@@ -10,7 +10,7 @@ Uses Automatic Speech Recognition, Text to Speech voice synthesis and Neural Mac
   
 ### Running the docker container
   * First and foremost please use the following command and record your voice to be translated. Your voice should be recorded as soon as it says recording..
-  * It will be saved as a input.wav file in the input folder.
+  * It will be saved as a input.wav file in the static directory.
   
   * Command to get recording: 
      ```
